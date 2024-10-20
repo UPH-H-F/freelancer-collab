@@ -179,6 +179,12 @@ html {
   }
 
   @font-face {
+    font-family: 'Chaparral Pro Bold'; 
+    src: url('ChaparralPro-Bold.ttf') format('truetype'); /* Assuming it's in the same folder as style.css */
+    font-weight: bold; 
+}
+
+  @font-face {
     font-family: 'Mighty Slab';
     src: url('Mighty Slab.ttf') format('truetype');
   }
@@ -2272,16 +2278,7 @@ html {
     font-weight: 400;
     display: block;
   }
-  
-  .paragraph {
-    color: #f9d3e2;
-    margin-bottom: 35px;
-    font-family: arek, sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 30px;
-  }
-  
+
   .div-block-7 {
     width: 350px;
     flex-direction: column;
@@ -2399,7 +2396,7 @@ html {
   .link-block-2 {
     width: 100%;
     height: 100%;
-    background-image: url("https://assets-global.website-files.com/60398d2e11f53121e992ac78/64796f5f61b61a0396724503_VolClub_Tile.jpg");
+    background-image: url("64796f5f61b61a0396724503_VolClub_Tile.jpeg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3041,6 +3038,15 @@ html {
   .div-block-43 {
     width: 60%;
     margin: 52px 0 60px;
+  }
+
+  .paragraph {
+    color: #f9d3e2;
+    margin-bottom: 20px;
+    font-family: "Chaparral Pro Bold", arek, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
   }
   
   .paragraph-2 {
@@ -4239,7 +4245,7 @@ html {
     background-color: #fff;
     border: 1px solid #3d51a2;
   }
-  
+
   .contact-name {
     color: #3d51a2;
     border: 1px #000;
@@ -6873,8 +6879,6 @@ html {
     }
   }
 
-  /* Existing CSS */
-
 .client-reviews .review-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -6894,12 +6898,141 @@ html {
   margin-top: 10px;
 }
 
-.skills {
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+
+  .skill {
+    text-align: center;
+  }
+
+/* General Styling */
+section {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }
+
+.horizontal-padding {
+  width: 0%;
+}
+
+.horizontal-padding2 {
+  width: 10%;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.contact-group {
+  text-align: left;
+  flex: 1;
+}
+
+.contact-title {
+  font-family: 'Mighty Slab', serif;
+  color: #3C51A2;
+  font-size: 2.5vw; /* Responsive font size */
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.input-group, .message-group {
+  margin-right: 20px;
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1vw; /* Responsive font size */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+  font-size: 1vw; /* Responsive font size */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2em;
+  max-height: 8em;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border-color: #3C51A2;
+}
+
+textarea::placeholder {
+  color: #999;
+}
+
+textarea:not(:placeholder-shown) {
+  height: auto;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3C51A2;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1vw; /* Responsive font size */
+}
+
+button[type="submit"]:hover {
+  background-color: #2a3a7a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-wrap: wrap;
+  }
+
+  .input-group, .message-group {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
 
 .tile {
   width: calc(33.33% - 20px); /* Adjust width for desired spacing */
