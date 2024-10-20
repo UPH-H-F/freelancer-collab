@@ -1,7 +1,7 @@
 # freelancer-collab
 https://uph-h-f.github.io/freelancer-collab/
 
-# Sierra Plese - Freelance Designer Portfolio
+#Freelance Designer Portfolio based on Sierra Plese website
 
 ## Features
 
