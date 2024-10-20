@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Freelance Designer Portfolio</title>
-  <meta content="Sierra Plese is a graphic designer based in Knoxville, Tennessee." name="description">
-  <meta content="Sierra Plese" property="og:title">
-  <meta content="Sierra Plese is a graphic designer based in Knoxville, Tennessee." property="og:description">
-  <meta content="6086dc73458faeda5fe95191_SocialSharing_Portfolio.jpg" property="og:image">
-  <meta content="Sierra Plese" property="twitter:title">
-  <meta content="Sierra Plese is a graphic designer based in Knoxville, Tennessee." property="twitter:description">
-  <meta content="6086dc73458faeda5fe95191_SocialSharing_Portfolio.jpg" property="twitter:image">
-  <meta property="og:type" content="website">
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Sierra Plese</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <link href="6085b585cb721f23675ecbe9_SP_favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="6085b5dddc3fb1833a8bdbba_SP_webclip.png" rel="apple-touch-icon">
 </head>
 <body>
   <div class="home-page-header">
@@ -197,63 +182,86 @@
       <span style="font-family: 'Mighty Slab', serif; color: #3C51A2; font-size: 50px; line-height: 44px; letter-spacing: 1.2px; text-align: center;">Clients</span>
       <div class="review-grid">
         <div class="review">
-          <p>"Sierra is a talented designer with a keen eye for detail. She helped us create a brand identity that truly represented our company's values. Highly recommend!"</p>
-          <span class="client-name">- John Doe, CEO of Acme Corp</span>
+          <p>"I needed some fun and eye-catching graphics for my social media posts, and Sierra delivered! Her illustrations were vibrant, creative, and helped me increase engagement on my platform."</p>
+          <span class="client-name">- David Rodriguez, Social Media Influencer</span>
         </div>
         <div class="review">
-          <p>"Working with Sierra was a pleasure. She was incredibly responsive, creative, and always delivered high-quality work on time and within budget."</p>
-          <span class="client-name">- Jane Smith, Marketing Manager at Widget Inc.</span>
+          <p>"Sierra's custom illustrations for our marketing materials were a huge hit! They added a unique touch and helped us connect with our audience on a deeper level. Her illustrations perfectly captured the essence of our brand."</p>
+          <span class="client-name">- David Chen, Marketing Manager at Widget Inc.</span>
         </div>
         <div class="review">
-          <p>"Sierra's design skills are top-notch! She has a great understanding of branding and design principles. I highly recommend her for any project."</p>
-          <span class="client-name">- Emily Brown, Founder of Green Solutions</span>
+          <p>"I was struggling to articulate my brand's unique story. Sierra came in and helped me crystallize my message and translate it into a compelling visual narrative. The result is a brand that truly stands out"</p>
+          <span class="client-name">- Thompson Lopez, Green Solutions</span>
         </div>
         <div class="review">
           <p>"I was blown away by Sierra's ability to bring my vision to life. She's a true professional and I would definitely work with her again."</p>
-          <span class="client-name">- Michael Jones, Director of Operations at XYZ Company</span>
+          <span class="client-name">- Anna Lee, Director of Operations at Star Merchant Services</span>
         </div>
         <div class="review">
           <p>"Sierra is a talented designer with a keen eye for detail. She helped us create a brand identity that truly represented our company's values. Highly recommend!"</p>
-          <span class="client-name">- John Doe, CEO of Acme Corp</span>
+          <span class="client-name">- Taylor Lincoln, Image designer at Acme Corp</span>
         </div>
         <div class="review">
           <p>"Working with Sierra was a pleasure. She was incredibly responsive, creative, and always delivered high-quality work on time and within budget."</p>
-          <span class="client-name">- Jane Smith, Marketing Manager at Widget Inc.</span>
+          <span class="client-name">- Miles Thomas, Diesel-Applebee Founder.</span>
         </div>
       </div>
     </div>
   </section>
 
+
+
   <section class="skills">
-    <span style="font-family: 'Mighty Slab', serif; color: #3C51A2; font-size: 50px; line-height: 44px; letter-spacing: 1.2px; text-align: center;">Skills</span>
+    <div class="container">
+      <span style="font-family: 'Mighty Slab', serif; color: #3C51A2; font-size: 50px; line-height: 44px; letter-spacing: 1.2px; text-align: center;">Skills</span>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>UI/UX Design</h3>
+          <p>I specialize in crafting user-centered interfaces that are both aesthetically pleasing and intuitive, ensuring a positive experience for your users.</p>
+        </div>
+        <div class="skill">
+          <h3>Branding & Identity Design</h3>
+          <p>I can develop a comprehensive brand identity that encompasses logos, color palettes, typography, and a consistent visual style that effectively communicates your brand's message.</p>
+        </div>
+        <div class="skill">
+          <h3>Graphic Design for Print Media</h3>
+          <p>I have a proven track record of designing effective print materials that grab attention, communicate information clearly, and enhance your brand's image.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="contact-form">
+  <section class="contact">
     <div class="container">
       <span style="font-family: 'Mighty Slab', serif; color: #3C51A2; font-size: 50px; line-height: 44px; letter-spacing: 1.2px; text-align: center;">Contact</span>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Send</button>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="contact-group">
+          </div>
+          <div class="message-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="2" required></textarea>
+          </div>
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Send</button> </div>
       </form>
     </div>
   </section>
+  <script src="script.js"></script>
 
   <div>
     <div class="footer">
       <div class="footer-text"><img src="6039b261fa06ba54c9aea6a5_Say%20hello.png" loading="lazy" sizes="(max-width: 479px) 42vw, (max-width: 767px) 140px, (max-width: 991px) 200px, 250px" srcset="6039b261fa06ba54c9aea6a5_Say%20hello-p-500.png 500w, 6039b261fa06ba54c9aea6a5_Say%20hello.png 672w" alt=""></div>
       <div class="footer-social">
-        <a href="/cdn-cgi/l/email-protection#0b78626e79796a7b676e786e4b6c666a626725686466" class="link"><span class="__cf_email__" data-cfemail="f6859f93848497869a938593b6919b979f9ad895999b">[email protected]</span></a>
+        <a href="mailto:sierraplese@gmail.com" class=
+        "link">sierraplese@gmail.com</a>
         <div class="div-block-75">
           <a href="https://www.instagram.com/sierraplese/" target="_blank" class="instagram"><img src="6039b357d03490c55f275cc9_instagram.png" loading="lazy" alt=""></a>
           <a href="https://www.linkedin.com/in/sierraplese/" target="_blank" class="linkedin"><img src="6039b3d8b14112607a853c79_linkedin-in.png" loading="lazy" alt=""></a>
