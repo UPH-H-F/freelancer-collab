@@ -262,7 +262,7 @@ html {
   }
   
   html.w-mod-touch * {
-    background-attachment: scroll !important;/
+    background-attachment: scroll !important;
   }
   
   .w-block {
@@ -345,7 +345,9 @@ html {
     text-indent: 0;
     text-transform: inherit;
     text-shadow: none;
-    font-smoothing: auto;
+    -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+    -moz-osx-font-smoothing: grayscale;  /* For Firefox on macOS */
+    /*font-smoothing: auto;*/
     vertical-align: baseline;
     cursor: inherit;
     white-space: inherit;
@@ -1228,7 +1230,7 @@ html {
     text-align: center;
     clear: both;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    /*tap-highlight-color: rgba(0, 0, 0, 0);*/
     background: #ddd;
     position: relative;
   }
@@ -1259,7 +1261,7 @@ html {
     height: 40px;
     text-align: center;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    /*tap-highlight-color: rgba(0, 0, 0, 0);*/
     margin: auto;
     padding-top: 10px;
     position: absolute;
@@ -1326,7 +1328,7 @@ html {
     cursor: pointer;
     color: #fff;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    /*tap-highlight-color: rgba(0, 0, 0, 0);*/
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -1960,7 +1962,7 @@ html {
     float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    /*tap-highlight-color: rgba(0, 0, 0, 0);*/
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
