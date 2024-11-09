@@ -2957,6 +2957,24 @@ html {
   .image-9 {
     width: 30px;
   }
+
+  .two-column-box {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  .two-column-box a {
+    margin-right: 20px; /* Add space between columns */
+  }
+
+  .three-column-box {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  .three-column-box a {
+    margin-right: 20px; /* Add space between columns */
+  }
   
   .reverse-button {
     width: 240px;
