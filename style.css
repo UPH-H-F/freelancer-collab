@@ -2989,6 +2989,8 @@ html {
     padding-right: 12px;
     text-decoration: none;
     display: flex;
+    position: relative;
+    z-index: 10; /* Ensure the link is on top of other elements */
   }
   
   .image-10, .lower-image, .tile-image {
