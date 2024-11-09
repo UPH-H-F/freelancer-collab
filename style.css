@@ -2964,7 +2964,7 @@ html {
   }
   
   .two-column-box a {
-    margin-right: 20px; /* Add space between columns */
+    margin-right: 50px; /* Add space between columns; default: 20 */
   }
 
   .three-column-box {
@@ -2973,7 +2973,7 @@ html {
   }
   
   .three-column-box a {
-    margin-right: 20px; /* Add space between columns */
+    margin-right: 50px; /* Add space between columns; default: 20 */
   }
   
   .reverse-button {
